@@ -223,11 +223,29 @@ small, .small {
   font-size: 0.875em;
 }
 
+.nempel{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
 mark, .mark {
   padding: 0.1875em;
   background-color: var(--bs-highlight-bg);
 }
+.rahasia {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
 
+.rahasia:hover {
+  opacity: 1;
+}
 sub,
 sup {
   position: relative;
